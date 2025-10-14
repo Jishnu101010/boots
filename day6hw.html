@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+     <div class="container">
+        <h1><i>Feedback Form</i></h1>
+        <hr>
+        <br>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name"  placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback:</label>
+                <textarea class="form-control" id="feedback" name="feedback" rows="4" placeholder="Enter your feedback" required></textarea>
+            </div>
+            <div class="mb-3">
+            <label class="form-label">Preferred Contact Method</label>
+            <div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="contactMethod" id="Email">
+                <label class="form-check-label" for="Email">Email</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="contactMethod" id="Phone">
+                <label class="form-check-label" for="Phone">Phone</label>
+              </div>
+            </div>
+          </div>
+            <div class="form-group">hoose 
+                <label class="form-check-label" for="site">Choose The Type Of Order </label>
+                <select class="form-control" id="site" name="site" required>
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="Cake">Cake</option>
+                    <option value="Pastries"> Pastries</option>
+                    <option value="Cookies">Cookies</option>
+                    </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">How satisfied are you with the website? </label><br>
+                           <div class="form-group">
+      <input type="range" class="form-control-range" name="range">
+    </div>
+                            </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</body>
+</html>
